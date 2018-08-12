@@ -12,8 +12,8 @@ class ViewController: UIViewController {
     @IBOutlet var label1: UILabel!   //ラベル
     //number1,2 は変数。
     //IntやDoubleは型。Int整数　 Double小数点と変数
-    var number1:Double = 0.0
-    var number2:Double = 0.0
+    var number1:Int = 0
+    var number2:Int = 0
     
     var ope: Int = 0
     
@@ -24,58 +24,58 @@ class ViewController: UIViewController {
     
     @IBAction func S0() {   //0
         number1 = number1*10 + 0
-        label1.text = String(format: "%.f",number1)
+        label1.text = String(number1)
         
     }
     
     @IBAction func S1() {   //1
         number1 = number1*10 + 1
-        label1.text = String(format: "%.f",number1)
+        label1.text = String(number1)
     }
     
     @IBAction func S2() {   //2
         number1 = number1*10 + 2
-        label1.text = String(format: "%.f",number1)
+        label1.text = String(number1)
     }
     
     @IBAction func S3() {   //3
         number1 = number1*10 + 3
-        label1.text = String(format: "%.f",number1)
+        label1.text = String(number1)
     }
     
     @IBAction func S4() {   //4
         number1 = number1*10 + 4
-        label1.text = String(format: "%.f",number1)
+        label1.text = String(number1)
     }
     
     @IBAction func S5() {   //5
         number1 = number1*10 + 5
-        label1.text = String(format: "%.f",number1)
+        label1.text = String(number1)
     }
     
     @IBAction func S6() {   //6
         number1 = number1*10 + 6
-        label1.text = String(format: "%.f",number1)
+        label1.text = String(number1)
     }
     
     @IBAction func S7() {   //7
         number1 = number1*10 + 7
-        label1.text = String(format: "%.f",number1)
+        label1.text = String(number1)
     }
     
     @IBAction func S8() {   //8
         number1 = number1*10 + 8
-        label1.text = String(format: "%.f",number1)
+        label1.text = String(number1)
     }
     
     @IBAction func S9() {   //9
         number1 = number1*10 + 9
-        label1.text = String(format: "%.f",number1)
+        label1.text = String(number1)
     }
     @IBAction func plus1() {      //足し算
         if ope==1 {
             number1=number2+number1
-            label1.text = String(format: "%.f",number1)
+            label1.text = String(number1)
         }
         number2 = number1
         number1 = 0
@@ -85,7 +85,7 @@ class ViewController: UIViewController {
     @IBAction func mainasu1() {   //引き算
         if ope==2 {
             number1=number2-number1
-            label1.text = String(format: "%.f",number1)
+            label1.text = String(number1)
         }
         number2=number1
         number1=0
@@ -95,7 +95,7 @@ class ViewController: UIViewController {
     @IBAction func kakeru1() {    //掛け算
         if ope==3 {
             number1=number2*number1
-            label1.text = String(format: "%.f",number1)
+            label1.text = String(number1)
         }
         number2 = number1
         number1 = 0
@@ -105,7 +105,7 @@ class ViewController: UIViewController {
     @IBAction func waru1() {      //割り算
         if ope==4 {
             number1=number2/number1
-            label1.text = String(format: "%.f",number1)
+            label1.text = String(number1)
         }
         number2 = number1
         number1 = 0
@@ -114,16 +114,16 @@ class ViewController: UIViewController {
     @IBAction func equal1() {   //イコール
         if ope == 1 {
             number1 = number1+number2
-            label1.text = String(format: "%.f",number1)
+            label1.text = String(number1)
         }else if ope == 2{
             number1 = number2-number1
-            label1.text = String(format: "%.f",number1)
+            label1.text = String(number1)
         }else if ope == 3{
             number1 = number2*number1
-            label1.text = String(format: "%.f",number1)
+            label1.text = String(number1)
         }else if ope == 4{
             number1 = number2/number1
-            label1.text = String(format: "%.f",number1)
+            label1.text = String(number1)
         }
         
     }
